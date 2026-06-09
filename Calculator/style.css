@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f 0%, #111119 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+/* Header UI Elements */
+.main-header {
+    width: 100%;
+    text-align: center;
+    padding: 25px 10px;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.main-header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: linear-gradient(45deg, #fff, #ff9f0a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Central Calculator Core Layout */
+.calculator-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 25px;
+    width: 360px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+    margin: 30px auto;
+}
+
+/* Smart Dual Display Area */
+.calculator-screen {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: right;
+    margin-bottom: 20px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+.expression-line {
+    font-size: 1.1rem;
+    color: #8e8e93;
+    min-height: 1.5rem;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+}
+
+.result-line {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: #fff;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Custom Webkit scrollbar for massive computation streams */
+.result-line::-webkit-scrollbar {
+    height: 3px;
+}
+.result-line::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Buttons Grid Layout Engine */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 18px 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:active, .btn.keyboard-active {
+    transform: scale(0.95);
+}
+
+/* Structural Color Separation Schemes */
+.num-btn {
+    background: rgba(255, 255, 255, 0.08);
+}
+.num-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.op-btn {
+    background: rgba(255, 159, 10, 0.15);
+    color: #ff9f0a;
+    font-size: 1.5rem;
+}
+.op-btn:hover {
+    background: rgba(255, 159, 10, 0.3);
+}
+
+.action-btn {
+    background: rgba(255, 255, 255, 0.03);
+    color: #a2a2a7;
+}
+.action-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.equals-btn {
+    background: #ff9f0a;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.equals-btn:hover {
+    background: #ffb340;
+    box-shadow: 0 0 15px rgba(255, 159, 10, 0.4);
+}
+
+/* Layout overrides */
+.double-width {
+    grid-column: span 2;
+}
+
+/* Footer Element Style Definition */
+.main-footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.main-footer span {
+    color: #ff9f0a;
+    font-weight: 500;
+}
