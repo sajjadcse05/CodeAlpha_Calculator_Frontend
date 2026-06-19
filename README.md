@@ -2,8 +2,6 @@
 
 A sleek, responsive, and precision-optimized web-based Calculator application built with standard front-end web technologies (**HTML5**, **CSS3 Grid**, and **Vanilla JavaScript**). The application features a dark-themed neumorphic interface, complete keyboard integration, and smart evaluation safety mechanics.
 
----
-
 ## 🚀 Features
 
 * **Core Arithmetic Operations:** Robust support for standard operations: Addition (`+`), Subtraction (`-`), Multiplication (`×`), and Division (`÷`).
@@ -13,8 +11,6 @@ A sleek, responsive, and precision-optimized web-based Calculator application bu
 * **Bonus Features Added:**
     * **Full Physical Keyboard Support:** Type calculations instantly using your keyboard numbers, operators, `Enter` or `=`, `Backspace`, and `Escape` (AC).
     * **Live Computation Preview:** Calculates and displays results instantly in real time as you type, before you even press equals.
-
----
 
 ## 🛠️ Tech Stack
 
